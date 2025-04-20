@@ -6,8 +6,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: npm install
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Install Node dependencies
-        run: npm --prefer-offline --no-audit ci
+        run: npm ci
       - name: Run tests
         run: npm test
