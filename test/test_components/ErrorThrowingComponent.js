@@ -1,8 +1,8 @@
-const React = require('react');
+const React = require("react");
 
-class ErrorThrowingComponent extends React.Component{
+class ErrorThrowingComponent extends React.Component {
   render() {
-    throw Error('Error from inside ErrorThrowingComponent');
+    throw Error("Error from inside ErrorThrowingComponent");
   }
 }
 
