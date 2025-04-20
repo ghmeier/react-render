@@ -1,4 +1,4 @@
-const React = require('react');
+const React = require("react");
 
 class Hello extends React.Component {
   render() {
